@@ -1,1 +1,4 @@
-@import "./normalize.scss";
+@import "./base/normalize.scss";
+@import "./base/digits.scss";
+
+@import "./components/masonry.scss";
