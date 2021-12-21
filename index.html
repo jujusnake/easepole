@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,17 +8,17 @@
       src="https://kit.fontawesome.com/f4ebd4994e.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="./style.css" />
     <title>배우 윤동주</title>
   </head>
-  <body>
+  <body class="">
     <header>
       <div class="gnb">
-        <h1>윤동주</h1>
-        <button type="button">
+        <h1><a href="./index.html">윤동주</a></h1>
+        <button type="button" class="hamburger sm-only">
           <i class="fas fa-bars"></i>
         </button>
-        <nav class="nav-group">
+        <nav class="nav-group sm-hidden">
           <ul class="nav-button">
             <li><a href="./about.html">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
@@ -29,19 +29,119 @@
       </div>
     </header>
 
-    <section class="title-banner">
+    <section class="index-1">
       <h1>윤&nbsp;동&nbsp;주</h1>
       <h2>Actor | Director | Photographer</h2>
     </section>
 
-    <section class="main-photo">
-      <img src="" alt="" />
+    <section class="index-2">
+      <div class="main-pic">
+        <img src="./assets/Photos/index-main.jpeg" alt="dongjoo main photo" />
+      </div>
+
+      <div class="sub-pics">
+        <div class="grid-sizer"></div>
+
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-1.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-2.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-3.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-4.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-5.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-6.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-7.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-8.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-9.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-10.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-11.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="sub-pic">
+          <img
+            src="./assets/Photos/index-sub-12.jpeg"
+            alt=""
+            onclick="onClick(this)"
+          />
+        </div>
+      </div>
     </section>
+
+    <div class="modal">
+      <div class="img-wrap">
+        <!-- <i class="fas fa-times"></i> -->
+        <img id="modalImg" src="./assets/Photos/index-sub-1.jpeg" alt="" />
+      </div>
+    </div>
 
     <aside class="btn-top">
       <button type="button">
         <i class="fas fa-chevron-up"></i>
       </button>
     </aside>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

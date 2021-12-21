@@ -1,4 +1,14 @@
-@import "./base/normalize.scss";
-@import "./base/digits.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
-@import "./components/masonry.scss";
+@import "./base/normalize.scss";
+@import "./base/njreset.scss";
+
+@import "./constants/digits.scss";
+@import "./constants/breakpoints.scss";
+@import "./constants/colors.scss";
+
+@import "./layout/gnb.scss";
+@import "./layout/index-1.scss";
+@import "./layout/index-2.scss";
+@import "./layout/floatingbtn.scss";
+@import "./layout/modal.scss";
