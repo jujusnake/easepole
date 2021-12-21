@@ -1,9 +1,14 @@
 // vanilla JS
 // init with element
 var grid = document.querySelector(".sub-pics");
-var msnry = new Masonry(grid, {
-  itemSelector: ".sub-pic",
-  columnWidth: ".grid-sizer",
+
+imagesLoaded(grid, function () {
+  // init Isotope after all images have loaded
+  msnry = new Masonry(grid, {
+    itemSelector: ".sub-pic",
+    columnWidth: ".grid-sizer",
+    percentPosition: true,
+  });
 });
 
 var msnry = new Masonry(".grid", {
