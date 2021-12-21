@@ -1,0 +1,47 @@
+.index-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-pic {
+    overflow: hidden;
+    margin: 30px 0;
+    box-sizing: border-box;
+    border: transparent 5px solid;
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .sub-pics {
+    width: 100%;
+
+    .grid-sizer {
+      width: 33.333333333%;
+    }
+
+    .sub-pic {
+      width: 33.333333333%;
+      box-sizing: border-box;
+
+      border: transparent 5px solid;
+      overflow: hidden;
+      transition: all 100ms ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
