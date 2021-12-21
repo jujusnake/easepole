@@ -1,0 +1,25 @@
+{
+  "name": "eastpole",
+  "version": "1.0.0",
+  "description": "Online Portfolio for actor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass styles/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujusnake/eastpole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujusnake/eastpole/issues"
+  },
+  "homepage": "https://github.com/jujusnake/eastpole#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
