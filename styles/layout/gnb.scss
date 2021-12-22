@@ -43,6 +43,11 @@ header {
 
     a {
       padding: 20px 20px;
+      &.active-nav {
+        font-weight: 700;
+        color: #000;
+        text-decoration: underline;
+      }
 
       &:hover {
         color: $gray;
