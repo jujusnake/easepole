@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -303,6 +304,9 @@ template {
  */
 [hidden] {
   display: none; }
+
+body {
+  font-family: "Nanum Gothic", sans-serif; }
 
 h1,
 h2 {
@@ -679,6 +683,7 @@ footer {
     transition: max-height 10s ease-in-out, opacity 1000ms ease-in-out; }
   @media screen and (min-width: 768px) {
     .portfolio-card {
-      width: 33%; } }
+      width: 33%;
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

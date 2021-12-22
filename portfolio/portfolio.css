@@ -1,0 +1,102 @@
+.buttons,
+.info {
+  color: #292929;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  font-family: "Nanum Myeongjo", serif;
+  padding: 12px 0;
+  font-size: 12px;
+}
+
+.buttons button:hover {
+  color: #7e7e7e;
+}
+
+.buttons-nav .prev,
+.buttons-nav .slash {
+  margin-right: 12px;
+}
+
+.info .info-text {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info .info-text h1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.info .info-text h2 {
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.info .info-text div {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #7e7e7e;
+}
+
+.info .info-images .img-wrap {
+  width: 100%;
+  border: 10px transparent solid;
+  overflow: hidden;
+}
+
+.info .info-images .img-wrap img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons button {
+    font-size: 18px;
+  }
+
+  .buttons-nav .prev,
+  .buttons-nav .slash {
+    margin-right: 24px;
+  }
+
+  .info .info-text {
+    margin: 40px 0;
+  }
+
+  .info .info-text h1 {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+
+  .info .info-text h2 {
+    font-size: 20px;
+    margin-bottom: 80px;
+    font-weight: 400;
+  }
+
+  .info .info-text div {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #7e7e7e;
+  }
+
+  .info .info-images {
+    display: flex;
+  }
+  .info .info-images .img-wrap {
+    width: 50%;
+  }
+} ;

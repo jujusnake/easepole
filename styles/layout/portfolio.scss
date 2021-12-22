@@ -92,6 +92,7 @@
   @include responsive(T) {
     &-card {
       width: 33%;
+      margin-bottom: 30px;
     }
   }
 }
