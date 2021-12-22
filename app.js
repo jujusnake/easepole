@@ -37,3 +37,5 @@ const closeModal = () => {
 };
 
 modal.addEventListener("click", closeModal);
+
+///////////////////////////
