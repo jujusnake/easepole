@@ -501,4 +501,36 @@ footer {
     font-family: "Nanum Myeongjo", serif;
     font-size: 12px; }
 
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+  .about-content .about-img-wrap {
+    overflow: hidden;
+    width: 50%; }
+    .about-content .about-img-wrap .about-img {
+      width: 100%; }
+  .about-content .about-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .about-content .about-text h1 {
+      font-size: calc(14px + 1.5vw);
+      font-family: "Nanum Myeongjo", serif;
+      margin-bottom: 8px; }
+    .about-content .about-text h2 {
+      color: #7e7e7e;
+      font-family: "Nanum Myeongjo", serif;
+      font-size: calc(10px + 0.5vw);
+      margin-bottom: 24px; }
+    .about-content .about-text ul {
+      color: #7e7e7e;
+      font-size: 1vw; }
+      .about-content .about-text ul li:first-child {
+        margin-bottom: 8px; }
+
 /*# sourceMappingURL=style.css.map */
