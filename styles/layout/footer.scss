@@ -7,6 +7,12 @@ footer {
 
   .footer-text {
     font-family: "Nanum Myeongjo", serif;
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  @include responsive(T) {
+    .footer-text {
+      font-size: 12px;
+    }
   }
 }

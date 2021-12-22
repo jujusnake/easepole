@@ -10,14 +10,14 @@ header {
   align-items: center;
   display: flex;
   font-family: "Nanum Myeongjo", serif;
-  height: 80px;
+  height: 60px;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 
   h1 {
-    font-size: 24px;
+    font-size: 16px;
 
     &:hover {
       color: $gray;
@@ -27,14 +27,14 @@ header {
   .hamburger {
     background-color: transparent;
     border: 0;
-    padding: 20px 5px;
+    padding: 20px 20px;
 
     &:active {
       color: $gray;
     }
 
     i {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 
@@ -52,6 +52,15 @@ header {
       &:hover {
         color: $gray;
       }
+    }
+  }
+
+  @include responsive(T) {
+    height: 80px;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 24px;
     }
   }
 }
