@@ -329,6 +329,10 @@ html {
 * {
   box-sizing: border-box; }
 
+button {
+  background-color: transparent;
+  border: none; }
+
 @media screen and (min-width: 768px) {
   .sm-only {
     display: none !important; } }
@@ -608,5 +612,73 @@ footer {
           font-size: 36px; }
       .contact-download {
         font-size: 24px; } }
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0; }
+  .portfolio-nav button {
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    margin-right: 24px;
+    transition: 300ms ease-in-out color; }
+    .portfolio-nav button:last-child {
+      margin-right: 0; }
+    .portfolio-nav button:hover {
+      color: #c0c0c0; }
+      .portfolio-nav button:hover.active {
+        color: #292929; }
+    .portfolio-nav button.active {
+      font-weight: 700;
+      border-bottom: solid #292929 2px;
+      margin-bottom: -2px; }
+  @media screen and (min-width: 768px) {
+    .portfolio-nav {
+      margin: 28px 0; }
+      .portfolio-nav button {
+        margin-right: 40px; } }
+
+.portfolio {
+  display: flex;
+  max-width: 1200px;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .portfolio-card {
+    border: transparent 5px solid;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px; }
+    .portfolio-card-wrap {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 24px; }
+    .portfolio-card-img {
+      width: 100%;
+      object-fit: contain; }
+    .portfolio-card-text {
+      text-align: center; }
+      .portfolio-card-text aside {
+        margin-bottom: 8px;
+        color: #c0c0c0;
+        font-size: 12px; }
+      .portfolio-card-text h1 {
+        font-size: 16px; }
+  .portfolio.selected {
+    max-height: 100000px;
+    opacity: 1;
+    transition: max-height 10s ease-in-out, opacity 1000ms ease-in-out; }
+  @media screen and (min-width: 768px) {
+    .portfolio-card {
+      width: 33%; } }
 
 /*# sourceMappingURL=style.css.map */
