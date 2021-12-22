@@ -392,7 +392,8 @@ header {
       .gnb .nav-button a.active-nav {
         font-weight: 700;
         color: #000;
-        text-decoration: underline; }
+        text-decoration: underline;
+        pointer-events: none; }
       .gnb .nav-button a:hover {
         color: #7e7e7e; }
   @media screen and (min-width: 768px) {
@@ -556,5 +557,56 @@ footer {
         font-size: 18px; }
       .about-content .about-text ul {
         font-size: 16px; } }
+
+.contact {
+  height: calc(100vh - 60px - 91.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Myeongjo", serif; }
+  .contact-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 700; }
+  .contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; }
+    .contact-button div {
+      margin-right: 12px; }
+      .contact-button div:last-child {
+        margin-right: 0; }
+      .contact-button div:hover, .contact-button div:active {
+        color: #7e7e7e; }
+    .contact-button i {
+      font-size: 24px; }
+  .contact-download {
+    font-size: 14px;
+    transition: transform 200ms ease-in-out; }
+    .contact-download .line {
+      max-width: 0px;
+      border-bottom: 1px solid #292929;
+      transition: max-width 1000ms ease-in-out; }
+    .contact-download:hover, .contact-download:active {
+      transform: rotate(2deg); }
+      .contact-download:hover .line, .contact-download:active .line {
+        max-width: 1000px; }
+  @media screen and (min-width: 768px) {
+    .contact {
+      height: calc(100vh - 80px - 93.8px); }
+      .contact-title {
+        font-size: 48px;
+        margin-bottom: 60px;
+        font-weight: 700; }
+      .contact-button {
+        margin-bottom: 60px; }
+        .contact-button div {
+          margin-right: 24px; }
+        .contact-button i {
+          font-size: 36px; }
+      .contact-download {
+        font-size: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
