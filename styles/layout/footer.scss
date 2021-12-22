@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: $light;
+
+  .footer-text {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 12px;
+  }
+}

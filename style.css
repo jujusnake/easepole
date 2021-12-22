@@ -357,6 +357,13 @@ html {
   .lg-hidden {
     display: none !important; } }
 
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
 .gnb {
   align-items: center;
   display: flex;
@@ -387,7 +394,7 @@ html {
 
 .index-1 {
   align-items: center;
-  background-color: #e5f3e3;
+  background-color: #d6e0d4;
   display: flex;
   flex-direction: column;
   font-family: "Nanum Myeongjo", serif;
@@ -443,6 +450,11 @@ html {
   .btn-top button:hover {
     opacity: 0.5;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
+  .btn-top button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .modal {
   position: fixed;
@@ -474,5 +486,15 @@ html {
 
 .stop-scroll {
   overflow-y: hidden; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: #c0c0c0; }
+  footer .footer-text {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
