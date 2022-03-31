@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderWrap>
+    <HeaderWrap scrollPosition={scrollPosition}>
       <HeaderNav>
         <MainLogo>
           <Link to="/">윤동주</Link>
@@ -14,10 +28,10 @@ const Header = () => {
             <Link to="/about">About</Link>
           </NavItem>
           <NavItem>
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </NavItem>
           <NavItem>
-            <Link to="/filmography">Filmography</Link>
+            <Link to="/video">Video</Link>
           </NavItem>
           <NavItem>
             <Link to="/contacts">Contacts</Link>
@@ -33,6 +47,15 @@ const HeaderWrap = styled.div`
   width: 100%;
   padding: 10px 0;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 300ms ease;
+
+  ${({ scrollPosition }) =>
+    scrollPosition &&
+    `  &:hover {
+    background-color: #fff;
+    transition: background-color 300ms ease;
+  }
+`}
 `;
 
 const HeaderNav = styled.header`
